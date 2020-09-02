@@ -2,22 +2,19 @@ print('Project 6: Acronym')
 
 
 
-sen = input('Enter text: ')
-num_space = sen.count(' ')
-sen_var = dict()
-for i in range(1,num_space+2) :
-        sen_var[i]= sen[0][0].upper()
-        num_space1 = sen.count(' ')
-        if num_space1!=0 :
-            space= sen.index(' ')+1
-            sen = sen[space:]
-        else:
-            sen_var[i] = sen[0][0].upper()
+inp = input('Enter Sentence: ')
 
+li = inp.split() 
 
-for i in range(1,num_space+2):
-    sen_var[i]=sen_var[i]+"."
+ini = {} #Empty Dictionary
 
-result = sen_var.values()
+for i in range(len(li)):
+    ini[i+1] = li[i][0]
+    ini[i+1] = ini[i+1].upper()+'.'
+
+result = ini.values()
+
 result1 = ''.join(result)
+
 print(result1)
+
