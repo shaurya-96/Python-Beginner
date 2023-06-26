@@ -5,6 +5,6 @@
 
 passgen, short for password generator, is a dynamic algorithm which provides customizable password.
 
-max provides maximum among given values. (wanted to see how max function works)
+max provides maximum among given values.
 
 acronym, as name suggests gives acronym of any sentence given to python
